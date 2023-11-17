@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html class="Fondo">
+<!---INICIO DE MI CABEZA DE PAGINA-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de capacitaciones</title>
+    <link rel="icon" href="/Img/logo.jpg">
+    <link rel="stylesheet" href="/recursos/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/recursos/css/Diseño.css">
+    <link rel="stylesheet" href="/recursos/datatable/dataTables.min.css">
+
+</head>
+<!--FIN DE MI CABEZA DE PAGINA-->
+
+<body class="DiseñoNav container py-5">
+
+    <!---INICIO DE MI NAVEGADOR DEL HOTEL OASIS-->
+    <section style="margin: 41px;">
+        <nav class="container DiseñoNav navbar navbar-dark bg-dark navbar navbar-expand-lg">
+            <h class="navbar-brand" href="#">HOTEL OASIS</h>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link enable" href="/Home.html">Inicio<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Preguntas Frecuentes<span class="sr-only"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!---FIN DE MI NAVEGADOR DEL HOTEL OASIS-->
+    <section class="container" style="background-color: rgb(255, 255, 255) !important;"> 
+        <div class="container">
+            <div>
+                <br><br>
+                <h5>Reserva de Habitaciones de Hotel</h5>
+            </div>
+            <div>
+                <span id="id_user"></span>
+            </div><br>
+            <!--INICIO DE MIS BOTONES PARA EL FILTRO-->
+            <button type="button" style="color:black;" class="btn BotonesDelNav " onclick="abrirform(0)">Nuevo</button>
+            <button type="button" style="color:black;" class="btn BotonesDelNav" onclick="buscar()">Buscar</button>
+            <button type="button" style="color:black;" class="btn BotonesDelNav" onclick="limpiar()">Limpiar</button><br><br><br>
+            <!--FIN DE MIS BOTONES PARA EL FILTRO-->
+        </div>
+        <hr>
+        <div class="container">
+            <table  class=" table" id="ID_tb_Programas">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Tipo de Habitacion</th>
+                        <th>Nombre</th>
+                        <th>DNI</th>
+                        <th>Fecha de Entrada</th>
+                        <th>Fecha de Salida</th>
+                        <th>Correo Electrónico</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+
+    <script src="/recursos/bootstrap/bootstrap.min.js"></script>
+    <script src="/recursos/bootstrap/popper.min.js"></script>
+    <script src="/recursos/js/jquery-3.7.1.min.js"></script>
+    <script src="/recursos/datatable/jquery.dataTables.min.js"></script>
+    <script src="/recursos/js/app.js"></script>
+    <script src="/recursos/js/programas/programas.js"></script>
+
+
+
+</body>
+
+<!--OMITIR - IGNORAR
+    > Capturar el usuario desde la url
+    > Mostrar en alguna parte al usuario obtenido desde la URL 
+    > Construir una tabla de programas
+        > Construir un arreglo de programas [Cod_Programa, Nombre_Programa, Nro_Cursos, Fecha_inicio, Fecha_fin]
+        > Para la tabla usar la libreria Datatable (https://datatables.net/)
+-->
+
+</html>
